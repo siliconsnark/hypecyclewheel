@@ -4,73 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HypeCycle™ - Your Startup Pivot Awaits</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: #0e0e0e;
-      color: #ffffff;
-      text-align: center;
-      padding: 50px;
-    }
+ <style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #0e0e0e;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 0;
+  }
 
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  p.tagline {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 30px;
+  }
+
+  #wheel {
+    width: 80vw;
+    max-width: 300px;
+    height: 80vw;
+    max-height: 300px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    background: conic-gradient(
+      #6a0dad 0% 20%,
+      #ff6347 20% 40%,
+      #ffd700 40% 60%,
+      #20b2aa 60% 80%,
+      #1e90ff 80% 100%
+    );
+    border: 6px solid #ffffff;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    transition: transform 1s ease-out;
+  }
+
+  button {
+    font-size: 1.1em;
+    padding: 12px 24px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 25px;
+  }
+
+  button:hover {
+    background-color: #63b3ed;
+  }
+
+  #result {
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: #ffd700;
+    padding: 0 10px;
+  }
+
+  #footer {
+    margin-top: 50px;
+    font-size: 0.85em;
+    color: #777;
+  }
+
+  a {
+    color: #aaa;
+  }
+
+  @media (max-width: 480px) {
     h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    p.tagline {
-      font-style: italic;
-      color: #aaa;
-      margin-bottom: 40px;
-    }
-
-    #wheel {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      margin: 0 auto 30px;
-      background: conic-gradient(
-        #6a0dad 0% 20%,
-        #ff6347 20% 40%,
-        #ffd700 40% 60%,
-        #20b2aa 60% 80%,
-        #1e90ff 80% 100%
-      );
-      border: 8px solid #ffffff;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5em;
-    }
-
-    button {
-      font-size: 1.2em;
-      padding: 12px 25px;
-      background-color: #1e90ff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-bottom: 30px;
-    }
-
-    button:hover {
-      background-color: #63b3ed;
+      font-size: 2em;
     }
 
     #result {
-      font-size: 1.8em;
-      margin-top: 20px;
-      color: #ffd700;
+      font-size: 1.2em;
     }
 
-    #footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #777;
+    button {
+      font-size: 1em;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
   <h1>HypeCycle™</h1>
